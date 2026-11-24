@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title = "Clinic Booking API")
+app = FastAPI(title="Clinic Booking API")
 
 
 @app.get("/health")
