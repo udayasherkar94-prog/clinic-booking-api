@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from app.routers import auth
 
 app = FastAPI(title="Clinic Booking API")
+app.include_router(auth.router)
 
 
 @app.get("/health")
